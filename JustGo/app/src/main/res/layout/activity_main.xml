@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffd213">
+
+    <ImageView
+        android:layout_width="117dp"
+        android:layout_height="22dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/title"
+        android:src="@drawable/go"
+        />
+    <View
+        android:layout_width="296.6dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="#9f8207"
+        android:id="@+id/line"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="8sp"
+        tools:text="평소에 하시는 것을 골라주세요!"
+        android:layout_alignLeft="@+id/line"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="35dp"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/logo_line"
+        android:id="@+id/logo_line"
+        android:layout_centerInParent="true"
+        />
+
+    <CheckBox
+        android:button="@android:color/transparent"
+        android:layout_width="35dp"
+        android:layout_height="75dp"
+        android:id="@+id/coffee_selected"
+        android:background="@drawable/coffee_selected"
+        android:gravity="center"
+        android:layout_toLeftOf="@id/logo_line"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="60dp"/>
+
+    <CheckBox
+        android:button="@android:color/transparent"
+        android:layout_width="43dp"
+        android:layout_height="55dp"
+        android:id="@+id/traffic_selected"
+        android:background="@drawable/traffic_selected"
+        android:gravity="center"
+        android:layout_toRightOf="@id/logo_line"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="60dp"/>
+
+    <CheckBox
+        android:button="@android:color/transparent"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/lotto_selected"
+        android:background="@drawable/lotto_selected"
+        android:gravity="center"
+        android:layout_above="@id/logo_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"/>
+
+    <CheckBox
+        android:button="@android:color/transparent"
+        android:layout_width="45dp"
+        android:layout_height="85dp"
+        android:id="@+id/drink_selected"
+        android:background="@drawable/drink_selected"
+        android:gravity="center"
+        android:layout_toLeftOf="@id/logo_line"
+        android:layout_below="@id/logo_line"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"/>
+
+    <CheckBox
+        android:button="@android:color/transparent"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:id="@+id/smoke_selected"
+        android:background="@drawable/smoke_selected"
+        android:gravity="center"
+        android:layout_toRightOf="@id/logo_line"
+        android:layout_alignBottom="@id/drink_selected"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"/>
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:id="@+id/next_pressed"
+        android:src="@drawable/next_pressed"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"/>
+
+
+</RelativeLayout>

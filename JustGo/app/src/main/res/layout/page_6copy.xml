@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffd213">
+
+    <ImageView
+        android:layout_width="117dp"
+        android:layout_height="22dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/title"
+        android:src="@drawable/go"
+        />
+    <View
+        android:layout_width="296.6dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="#9f8207"
+        android:id="@+id/line"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="100dp"
+        android:id="@+id/logo_m"
+        android:src="@drawable/logo_m"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="이렇게 하여 개발된 버전과 흡사한 스케치 전용 행간값을 찾게 되어 따로 표를 만들어 다른 디자이너들에게 수치 참고용으로 공유를 하였고 이를 바탕으로 디자인있었습니다."
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="8sp"
+        android:layout_below="@id/logo_m"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="17dp"
+        android:id="@+id/yes_pressed"
+        android:src="@drawable/yes_pressed"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="35dp"/>
+    <ImageView
+        android:layout_width="26dp"
+        android:layout_height="17dp"
+        android:id="@+id/no_pressed"
+        android:src="@drawable/no_pressed"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="35dp"/>
+
+</RelativeLayout>
